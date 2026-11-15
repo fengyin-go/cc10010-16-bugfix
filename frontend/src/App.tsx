@@ -10,6 +10,7 @@ import GoldView from './views/gold'
 import LakezoneView from './views/lakezone'
 import StreamView from './views/stream'
 import BatchView from './views/batch'
+import BatchDetailView from './views/batch/BatchDetailView'
 import SnapshotView from './views/snapshot'
 import GovernView from './views/govern'
 import MetaView from './views/meta'
@@ -53,6 +54,7 @@ export default function App() {
           <Route path="/lakezone" element={<LakezoneView />} />
           <Route path="/stream" element={<StreamView />} />
           <Route path="/batch" element={<BatchView />} />
+          <Route path="/batch/:id" element={<BatchDetailView />} />
           <Route path="/snapshot" element={<SnapshotView />} />
           <Route path="/govern" element={<GovernView />} />
           <Route path="/meta" element={<MetaView />} />
